@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+html, 
+body {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(241,242,245);
+  height: 100%;
+}
+
+.container {
+  margin: 100px auto;
+  width: 1024px;
+  height: 100%; 
+}
+
+.logo,
+.login { 
+  display: inline-block;
+}
+
+.logo img {
+  width: 250px;
+  height: 100px;
+}
+
+.logo h3 {
+  margin-top: -10px;
+  margin-left: 30px;
+}
+
+.login form {
+  width: 320px;
+  height: 300px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.login form input,
+.login form button,
+.login form a {
+  display: block;
+}
+
+.login form input,
+.login-button {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.login form input[type="password"], 
+.login-button {
+  margin-top: 10px;
+}
