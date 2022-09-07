@@ -23,6 +23,7 @@ a:hover {
 
 main {
   height: 80%; 
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .grid {
@@ -94,11 +95,14 @@ main {
 
 .login p {
   text-align: center;
+  color: #000;
+  font-size: 14px;
 }
 
 .login p a {
   color: #000;
   font-weight: bold;
+  
 }
  
 .login-button {
@@ -132,4 +136,13 @@ main {
 footer {
   height: 20%;
   background-color: #fff;
+  padding: 20px;
+}
+
+footer .footer-container a,
+p {
+  color: rgb(139,141,145	);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin-right: 10px;
 }
