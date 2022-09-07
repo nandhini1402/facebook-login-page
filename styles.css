@@ -5,22 +5,38 @@
 html, 
 body {
   margin: 0;
+  height: 100%;
 }
 
 body {
   background-color: rgb(241,242,245);
-  height: 100%;
+  font-size: 16px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+main {
+  height: 80%; 
+}
+
+.grid {
+  width: 1024px;
+  margin: 0 auto;
 }
 
 .container {
-  margin: 100px auto;
-  width: 1024px;
-  height: 100%; 
+  display: flex;
 }
 
 .logo,
-.login { 
-  display: inline-block;
+.login {
+  margin-top: 100px;
 }
 
 .logo img {
@@ -28,16 +44,18 @@ body {
   height: 100px;
 }
 
-.logo h3 {
+.logo h2 {
   margin-top: -10px;
   margin-left: 30px;
+  width: 60%;
 }
 
 .login form {
-  width: 320px;
+  width: 360px;
   height: 300px;
   padding: 20px;
   background-color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
 }
 
 .login form input,
@@ -47,13 +65,71 @@ body {
 }
 
 .login form input,
-.login-button {
+.login form button {
   width: 100%;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 10px;  
 }
 
 .login form input[type="password"], 
-.login-button {
+.login form button,
+.login form a {
   margin-top: 10px;
+}
+
+.login form input {
+  height: 45px;
+  font-size: 16px;
+}
+
+.login form input:focus {
+  border: 1px solid rgb(57,117,234);
+  outline: 0;
+}
+
+.login form a {
+  text-align: center;
+  color: rgb(57,117,234);
+}
+
+.login p {
+  text-align: center;
+}
+
+.login p a {
+  color: #000;
+  font-weight: bold;
+}
+ 
+.login-button {
+  background-color: rgb(57,117,234);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.login form, 
+.login form input,
+.login form button {
+  border-radius: 6px;
+}
+
+.login form .login-newacc {
+  background-color: rgb(85,153,57); 
+  color: #fff;
+  width: 200px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.line {
+  margin: 20px 0;
+  height: 1px;
+  background-color: #ccc;
+}
+
+footer {
+  height: 20%;
+  background-color: #fff;
 }
